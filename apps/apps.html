@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-color: hotpink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: hotpink;
+            color: skyblue;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            color: maroon;
+        }
+        .app {
+            background-color: green;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: inherit;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Apps</h1>
+        <nav>
+            <a href="./Home.html">Home</a>
+            <a href="./apps.html">Apps</a>
+             <a href="./About.html">About</a>
+            <a href="./dashboard.html">Dashboard</a>
+            <a href="./Categories.html">Categories</a>
+            <a href="./Contact.html">Contact</a>
+            <a href="./logout.html">Logout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="app">
+            <h2>Welcome to my apps</h2>
+            <p>Description of the app goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="image1.jpg" alt="image1" width="600" height="600">
+        </div>
+        <div class="app">
+            <h2>Apps that combine all mobile development management</h2>
+            <img src="image3.jpg" alt="image3" width="300" height="300">
+            <p>Description of the app goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Add more app listings as needed -->
+    </div>
+    <script>
+  // JavaScript for background image slideshow
+  var images = [ 'image1.jpg','image3.jpg']; // Add more image URLs as needed
+  var currentIndex = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+  }
+
+  changeBackground(); // Start the slideshow
+  </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:bisque;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: skyblue;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+        .chart {
+            height: 200px;
+            margin-bottom: 10px;
+            background-color: #ddd;
+            border-radius: 4px;
+        }
+        .recent-activity {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        .recent-activity p {
+            margin: 5px 0;
+        }
+        .alert {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">System Dashboard</h1>
+        <div class="dashboard">
+            <div class="card">
+                <h3>Summary Statistics</h3>
+                <p>Total Applications: 50</p>
+                <p>Total Devices: 100</p>
+                <p>Total Users: 20</p>
+            </div>
+            <div class="card">
+                <h3>Application Ratings</h3>
+                <div class="chart"></div>
+            </div>
+            <div class="card">
+                <h3>Recent Activity</h3>
+                <div class="recent-activity">
+                    <p>User John Doe logged in</p>
+                    <p>Application XYZ installed on Device 123</p>
+                    <p class="alert">Error: Failed to update application ABC</p>
+                    <p>Device 456 disconnected</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>System Status</h3>
+                <p>Uptime: 98%</p>
+                <p>Issues: None</p>
+            </div>
+            <div class="card">
+                <h3>User Profile</h3>
+                <p>Name: John Doe</p>
+                <p>Email: john@example.com</p>
+                <p>Role: Administrator</p>
+            </div>
+            <div class="card">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./applicationview.php">Manage Applications</a></li>
+                    <li><a href="./devices.html">Manage Devices</a></li>
+                    <li><a href="./userinsert.php">Manage Users</a></li>
+                    <li><a href="./developer.html">Manage developer</a></li>
+                    <li><a href="./installation.html">Manage installation</li>
+                    <li><a href="./contact.html">Manage contact</a></li>
+                    <li><a href="#">View Reports</a></li>
+                    <li><a href="./home.html">Back to Home page</a></li>
+                    <li><a href="./About.html">Back to About page</a></li>
+                    <li><a href="./apps.html">Back to apps page</a></li>
+                    <li><a href="./login.html">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

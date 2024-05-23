@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional inline styles specific to this page */
+        . body {
+            background-color: hotpink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: hotpink;
+            color: skyblue;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width:0px;
+            margin: 5px auto;
+            padding: 0 0px;
+            color: maroon;
+        }
+        .app {
+            background-color: green;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: inherit;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./Home.html">Home</a>
+         <a href="./apps.html">Apps</a>
+        <a href="./Categories.html">Categories</a>
+        <a href="./About.html">About</a>
+        <a href="./dashboard.html">dashboard</a>
+        <a href="./Contact.html">Contact</a>
+        <a href="./logout.html">logout</a>
+    </nav>
+
+    <div class="about-section">
+        <div class="about-content">
+            <h1>About Us</h1>
+            
+            <p>We are dedicated to providing a seamless experience for users and developers alike. Welcome to mobile development. We are passionate about creating innovative and user-centric mobile experiences that drive success for our clients, with a focus on cutting-edge technology and design. We specialize in crafting custom mobile applications tailored to meet the unique needs of each project.</p>
+            <h2>Our Mission</h2>
+            <p>Our mission is to empower businesses and individuals to thrive in the mobile-first world by delivering exceptional mobile solutions that combine creativity, technology, and strategy.</p>
+            <h3>Our Values</h3>
+            <p>Innovation - Collaboration - Excellence</p>
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="image7.jpg" alt="image7">
+                <h3>RUBONERA ALICE</h3>
+                 <p>Founder & CEO</p>
+                <img src="p.jpg" alt="p">
+               
+            </div>
+            <div class="team-member">
+                 <img src="isac(335).jpg" alt="isa(335)" width="600" height="600">
+                <h3>Jane Smit
+                <p>Head of Development</p>
+                <img src="m.jpg" alt="m" width="600" height="600">
+            </div>
+            <!-- Add more team members as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <script>
+  // JavaScript for background image slideshow
+  var images = [ 'image1.jpg','image4.jpg']; // Add more image URLs as needed
+  var currentIndex = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+    setTimeout(changeBackground, 100); //changa image every 5 seconds
+  }
+
+  changeBackground(); // Start the slideshow
+  </script>
+        <p>&copy; 2024 My App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

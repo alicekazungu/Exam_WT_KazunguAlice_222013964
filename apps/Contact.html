@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 50vh;
+            /* Specify the background image here */
+            background-image: url('image7.jpg');
+        }
+
+        /* Additional inline styles specific to this page */
+        .contact-section {
+            padding: 20px;
+             background-image: url('image7.jpg');
+        }
+
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-form {
+            margin-bottom: 20px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: greenyellow;
+            color: #fff;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        /* Style for app images */
+        .app-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top:0px;
+        }
+
+        .app-images img {
+            width: 50px;
+            height: 40;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./home.html">Home</a>
+        <a href="./Categories.html">Categories</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-section">
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+            <div class="contact-form">
+                <form action="contact.php" method="post">
+                    <label for="first_name">First Name:</label>
+                    <input type="text" id="name" name="first_name" required>
+                    <label for="last_name">Last Name:</label>
+                    <input type="text" id="name" name="last_name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p>Send us an email at mobiledvlp@gmail.com.</p>
+                <p>Reach out to us on our social media channels.</p>
+                <div class="app-images">
+                    <img src="image7.jpg" alt="image">
+                </div>
+                <p>Our team is ready to assist you and help bring your mobile app idea to life.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <script>
+  // JavaScript for background image slideshow
+  var images = ['image4.png',  'image3.jpg','image7.jpg']; // Add more image URLs as needed
+  var currentIndex = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+  }
+
+  changeBackground(); // Start the slideshow
+  </script>
+        <p>&copy; 2024 My App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
